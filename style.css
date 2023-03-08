@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+
+    /* Primary */
+
+    --Light-red: hsla(0, 100%, 67%, 0.137);
+    --Orange-yellow: hsla(39, 94%, 50%, 0.253);
+    --Green-teal: hsla(166, 100%, 37%, 0.178);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* Gradients(background) */
+
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    /* Gradients(circle) */
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* Shadow */
+
+    --Box-shadow: #d4dff8;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 375px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.card_container {
+    width: 100%;
+}
+
+.card_container_result {
+    text-align: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 0px 0px 18px 18px;
+    height: 357px;
+    padding-top: 30px;
+}
+
+.card_container_result h3 {
+    color: var(--Light-lavender);
+}
+
+.card_container_result-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 18px;
+}
+
+.circle {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+}
+
+.circle h1 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--White);
+}
+
+.circle p {
+    color: var(--Light-lavender);
+}
+
+.card_container_result-score h2 {
+    color: var(--White);
+}
+
+.card_container_result-score p {
+    margin: 25px auto;
+    width: 80%;
+    color: var(--Light-lavender);
+}
+
+.card_container_summary {
+    padding: 28px;
+}
+
+.card_container_summary h2 {
+    margin-bottom: 25px;
+}
+
+.category {
+    height: 55px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.category_p {
+    display: flex;
+}
+
+.category_p img {
+    margin-right: 10px;
+}
+
+span {
+    color: black;
+    font-weight: 700;
+}
+.span_p {
+    color: gray;
+    font-weight: 700;
+}
+
+.reaction {
+    background-color: var(--Light-red);
+}
+
+.reaction_p {
+    color: #CE555E;
+}
+
+.memory {
+    background-color: var(--Orange-yellow);
+}
+
+.memory_p {
+    color: #f0a715;
+}
+
+.verbal {
+    background-color: var(--Green-teal);
+}
+
+.verbal_p {
+    color: #3da185;
+}
+
+.visual {
+    background-color: #a2aede60;
+}
+
+.visual_p {
+    color: var(--Cobalt-blue);
+}
+
+button {
+    background-color: var(--Dark-gray-blue);
+    border-radius: 25px;
+    border-style: none;
+    color: var(--White);
+    font-weight: 500;
+    width: 100%;
+    height: 55px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media screen and (min-width: 750px) {
+
+    body {
+        min-height: 100vh;
+    }
+
+    .card_container {
+        display: flex;
+        width: 735px;
+        height: 513px;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 10px 10px 20px var(--Box-shadow);
+        margin-bottom: 20px;
+    }
+
+    .card_container_result {
+        width: 50%;
+        height: 100%;
+    }
+
+    .card_container_summary {
+        width: 50%;
+        height: 100%;
+    }
+
+    .circle {
+        width: 205px;
+        height: 205px;
+        margin: 25px;
+    }
+
+    .circle h1 {
+        font-size: 80px;
+    }
+
+    .card_container_result-score p {
+        width: 70%;
+    }
+
+    .category {
+        margin-bottom: 20px;
+    }
+
+    button {
+        margin-top: 40px;
+        font-weight: 700;
+    }
+
+}
